@@ -1,0 +1,44 @@
+:root {
+  /* Əsas Rənglər (Light Mode) */
+--bg-color: #162E93;
+--card-bg: #ffffff;
+--text-main: #1e293b;
+--text-muted: #64748b;
+--primary: #4f46e5;
+--primary-hover: #4338ca;
+
+  /* Diaqram Parametrləri */
+--chart-bar-default: #6366f1;
+--chart-bar-hover: #818cf8;
+--chart-axis-color: #cbd5e1;
+--chart-grid-color: #f1f5f9;
+
+  /* Digər Elementlər */
+--border-color: #e2e8f0;
+--input-bg: #ffffff;
+--success: #10b981;
+--danger: #ef4444;
+
+  /* Ölçülər (Constants) */
+--radius-sm: 4px;
+--radius-md: 8px;
+--shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Dark Mode Rəngləri */
+[data-theme='dark'] {
+--bg-color: #0f172a;
+--card-bg: #1e293b;
+--text-main: #f1f5f9;
+--text-muted: #94a3b8;
+--primary: #818cf8;
+--primary-hover: #D552A3;
+
+--chart-bar-default: #818cf8;
+--chart-bar-hover: #a5b4fc;
+--chart-axis-color: #334155;
+--chart-grid-color: #1e293b;
+
+--border-color: #334155;
+--input-bg: #1e293b;
+}

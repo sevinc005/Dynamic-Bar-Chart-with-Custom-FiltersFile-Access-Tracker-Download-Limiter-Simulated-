@@ -1,0 +1,26 @@
+.chart-container {
+  position: relative; /* Tooltip-in düzgün yerləşməsi üçün vacibdir */
+  display: inline-block;
+}
+.tooltip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  pointer-events: none; /* Siçanın hərəkətinə mane olmasın */
+  transform: translate(-50%, -100%); /* Tam sütunun ortasında və yuxarısında görünsün */
+  transition: opacity 0.2s;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+rect {
+  cursor: pointer;
+  transition: fill 0.3s ease;
+}
+
+rect:hover {
+  fill: var(--chart-bar-hover);
+}

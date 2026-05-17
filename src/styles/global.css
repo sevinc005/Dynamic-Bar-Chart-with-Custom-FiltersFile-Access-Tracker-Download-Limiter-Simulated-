@@ -1,0 +1,44 @@
+/*  Light Mode  rəngləri */
+:root {
+  --bg-color: #162E93;
+  --card-bg: #ffffff;
+  --text-main: #2d3436;
+  --text-muted: #636e72;
+  --primary: #e75cad;
+  --border-color: #dfe6e9;
+  --input-bg: #ffffff;
+  
+  /* Diaqram rəngləri */
+  --chart-bar-default: #6c5ce7;
+  --chart-bar-hover: #a29bfe;
+  --chart-axis-color: #b2bec3;
+  
+  --radius-md: 12px;
+  --radius-sm: 6px;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --card-bg: #1e1e1e;
+  --text-main: #e0e0e0;
+  --text-muted: #a0a0a0;
+  --border-color: #333;
+  --input-bg: #2a2a2a;
+  --chart-bar-default: #8275f0;
+  --chart-axis-color: #444;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
